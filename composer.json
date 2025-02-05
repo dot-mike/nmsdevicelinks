@@ -1,0 +1,41 @@
+{
+  "name": "dot-mike/nmsdevicelinks",
+  "description": "LibreNMS plugin to view, manage and delete device links",
+  "version": "1.0.0",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "dot-mike",
+      "email": "d0tmike@pm.me"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "DotMike\\NmsDeviceLinks\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DotMike\\NmsDeviceLinks\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DotMike\\NmsDeviceLinks\\Providers\\DeviceLinkServiceProvider"
+      ]
+    }
+  },
+  "archive": {
+    "exclude": [
+      ".devcontainer",
+      ".vscode",
+      "screenshots"
+    ]
+  },
+  "require": {
+    "librenms/plugin-interfaces": "^1.0"
+  }
+}
